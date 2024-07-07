@@ -19,7 +19,11 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div
+        class="collapse navbar-collapse"
+        id="navbarResponsive"
+        v-if="cart.length > 0 && !isCheckoutPage"
+      >
         <div class="navbar-text ml-auto d-flex align-items-center">
           <button
             class="btn btn-success btn-sm mr-2"
@@ -29,7 +33,7 @@
             <font-awesome-icon icon="dollar-sign"></font-awesome-icon>
           </button>
 
-          <div class="dropdown" v-if="cart.length > 0">
+          <div class="dropdown">
             <button
               class="btn btn-success btn-sm dropdown-toggle"
               id="dropdownCart"
@@ -101,11 +105,15 @@ export default {
       return "Rp" + Number.parseFloat(value).toFixed(2);
     },
   },
+  computed: {
+    isCheckoutPage() {
+      return this.$route.path === "/checkout";
+    },
+  },
 };
 </script>
 
 <style>
-/* Tambahan CSS untuk mendukung responsivitas */
 .navbar-brand img {
   height: 40px;
   width: auto;
@@ -124,11 +132,11 @@ export default {
 }
 
 .dropdown-menu {
-  width: 300px; /* Sesuaikan dengan kebutuhan */
+  width: 300px;
 }
 
 .dropdown-item span {
-  max-width: 150px; /* Membatasi lebar nama produk */
+  max-width: 150px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

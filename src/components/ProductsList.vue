@@ -64,7 +64,7 @@ export default {
 
 <style>
 .bg-danger {
-  background-color: #dc3545; /* Warna latar belakang merah */
+  background-color: #dc3545;
 }
 
 p {
@@ -73,20 +73,20 @@ p {
 }
 
 .w-100 {
-  width: 100%; /* Mengambil seluruh lebar */
+  width: 100%;
 }
 
 .min-vh-100 {
-  min-height: 100vh; /* Minimal setinggi viewport */
+  min-height: 100vh;
 }
 
 .gap {
-  gap: 8px; /* Jarak antar elemen */
-  justify-content: center; /* Pusatkan elemen */
+  gap: 8px;
+  justify-content: center;
 }
 
 .card-why {
-  min-height: 300px !important; /* Tinggi minimum untuk menjaga konsistensi */
+  min-height: 300px !important;
   display: flex;
   flex-direction: column;
   padding: 10px !important;
@@ -126,21 +126,19 @@ p {
 }
 
 @media (max-width: 768px) {
-  /* Aturan untuk layar lebih kecil dari 768px */
   .card-why {
     min-height: 250px;
     justify-content: center;
     align-items: center;
   }
   .gap {
-    gap: 8px; /* Kurangi jarak antar elemen */
+    gap: 8px;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  /* Aturan untuk layar antara 769px dan 1024px */
   .card-why {
-    min-height: 280px; /* Sesuaikan tinggi minimum */
+    min-height: 280px;
   }
 }
 </style>

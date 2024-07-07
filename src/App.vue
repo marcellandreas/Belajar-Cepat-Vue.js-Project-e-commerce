@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="container mt-5">
+  <div id="app" class="mt-5">
     <router-view
       :cart="cart"
       :cartQty="cartQty"
