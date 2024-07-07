@@ -72,6 +72,11 @@
                 </div>
                 <div class="dropdown-divider"></div>
               </div>
+              <router-link
+                class="btn btn-sm btn-outline-info text-dark float-right"
+                to="/checkout"
+                >Go to Checkout
+              </router-link>
             </div>
           </div>
         </div>

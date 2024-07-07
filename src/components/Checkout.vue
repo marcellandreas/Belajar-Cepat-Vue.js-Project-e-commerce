@@ -1,6 +1,9 @@
 <template>
   <div>
     <h1>Checkout</h1>
+    <section class="section-not-cart" v-if="!cart.length">
+      Tidak ada barang yang dicheckout
+    </section>
     <table class="table table-hover" v-if="cart.length">
       <caption class="text-right h3">
         <b>Total:</b>
@@ -44,6 +47,9 @@
         </tr>
       </tbody>
     </table>
+    <router-link class="btn btn-sm btn-outline-info text-dark" to="/"
+      >Back to Menu</router-link
+    >
   </div>
 </template>
 
@@ -57,3 +63,15 @@ export default {
   },
 };
 </script>
+
+<style>
+.section-not-cart {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px 0 50px 0;
+  margin-bottom: 12px;
+}
+</style>
