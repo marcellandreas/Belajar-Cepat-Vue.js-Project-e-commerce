@@ -19,13 +19,10 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div
-        class="collapse navbar-collapse"
-        id="navbarResponsive"
-        v-if="cart.length > 0 && !isCheckoutPage"
-      >
+      <div class="collapse navbar-collapse" id="navbarResponsive">
         <div class="navbar-text ml-auto d-flex align-items-center">
           <button
+            v-if="cart.length >= 0 && !isCheckoutPage"
             class="btn btn-success btn-sm mr-2"
             @click="$emit('toggle-slide')"
             title="Toggle View"
@@ -33,7 +30,7 @@
             <font-awesome-icon icon="dollar-sign"></font-awesome-icon>
           </button>
 
-          <div class="dropdown">
+          <div class="dropdown" v-if="cart.length > 0 && !isCheckoutPage">
             <button
               class="btn btn-success btn-sm dropdown-toggle"
               id="dropdownCart"
