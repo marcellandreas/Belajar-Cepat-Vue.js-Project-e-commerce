@@ -12,11 +12,16 @@ merupakan hasil pembelajaran saya mengenai VueJS dengan membangun website dengan
 8.  Topik 8: Implementasi Project dengan Vue CLI
 9.  Topik 9: Implementasi VueRouter
 
+## Tujuan Umum dan Khusus Pelatihan
+
+1. Di akhir pelatihan, peserta dapat mengenal langkah-langkah membuat website menggunakan framework Vue.Js
+2. Dapat mempraktikan dasar-dasar membuat website menggunakan framework Vue.Js
+3. Dapat merangkumkan cara membuat website menggunakan framework Vue.Js
+
 ## Teknologi yang Digunakan
 
 - **Vue.js**: Framework JavaScript untuk membangun antarmuka pengguna.
 - **Vue Router**: Manajemen rute untuk aplikasi Vue.js.
-- **Vuex (Opsional)**: Manajemen state untuk aplikasi Vue.js.
 - **Bootstrap**: Library CSS untuk desain responsif.
 - **FontAwesome**: Ikon vektor yang dapat disesuaikan.
 
